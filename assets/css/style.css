@@ -86,3 +86,22 @@ textarea{
   border-bottom-right-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
 }
+
+/* Style the size for the textarea input for the task-update*/
+.task-text {
+  border: none; 
+  border-radius: 0.2rem; 
+  width: 99.3%; 
+  height: 95%; 
+  left: 0.5%;
+  top: 1%; 
+}
+
+/* Style the regular task p */
+.task-p {
+  width: 99.3%; 
+  height: 95%; 
+  left: 1.7%;
+  top: 12%; 
+  position: absolute; 
+}

@@ -1,178 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Create 1 row with 3 columns, first for time + second for task + third for edit button -->
-      <!-- Create 9 rows -->
-      <!-- 1 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>9 A.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
-      <!-- 2 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>10 A.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
-
-      <!-- 3 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>11 A.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
-
-      <!-- 4 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>12 P.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
-
-      <!-- 5 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>1 P.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
-
-      <!-- 6 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>2 P.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div> 
-      
-      <!-- 7 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>3 P.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
-
-      <!-- 8 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>4 P.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
-
-      <!-- 9 -->
-      <div class = "row mb-4">
-        <div class = "col-1 time-wrap">
-          <p>5 P.M.</p>
-        </div>
-        <div class = "col-10 bg-light">
-         <p class = "task-content d-inline">
-           temp 
-         </p>
-        </div>
-        <div class = "col-1 round-right bg-info text-light">
-          <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
-        </div>
-      </div>   
-      <!-- Timeblocks go here -->
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Create 1 row with 3 columns, first for time + second for task + third for edit button -->
+    <!-- Create 9 rows -->
+    <!-- 9 A.M. -->
+    <div id = "time-9"class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>9 A.M.</p>
+      </div>
+      <div id="task9" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save9" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <!-- 10 A.M. -->
+    <div id = "time-10" class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>10 A.M.</p>
+      </div>
+      <div id="task10" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save10" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+    <!-- 11 A.M. -->
+    <div id = "time-11" class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>11 A.M.</p>
+      </div>
+      <div id="task11" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save11" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+    <!-- 12 P.M. -->
+    <div class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>12 P.M.</p>
+      </div>
+      <div id="task12" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save12" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+    <!-- 1 P.M. -->
+    <div class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>1 P.M.</p>
+      </div>
+      <div id="task1" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save1" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+    <!-- 2 P.M. -->
+    <div class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>2 P.M.</p>
+      </div>
+      <div id="task2" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save2" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+    <!-- 3 P.M. -->
+    <div class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>3 P.M.</p>
+      </div>
+      <div id="task3" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save3" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+    <!-- 4 P.M. -->
+    <div class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>4 P.M.</p>
+      </div>
+      <div id="task4" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save4" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+    <!-- 5 P.M. -->
+    <div class="time-row row mb-4">
+      <div class="time-wrap col-1 ">
+        <p>5 P.M.</p>
+      </div>
+      <div id="task5" class="task-wrapper col-10 bg-light position-relative">
+        <p class="task-p"></p>
+      </div>
+      <div id="save5" class="save-task col-1 round-right bg-info text-light">
+        <span class="oi oi-task display-5 mx-4 mt-2"></span></span>
+      </div>
+    </div>
+
+
+    <!-- Timeblocks go here -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Replaced Moment.js with the alternative day.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"></script>
+  <script src="assets/js/script.js"></script>
+ 
+</body>
+
 </html>
