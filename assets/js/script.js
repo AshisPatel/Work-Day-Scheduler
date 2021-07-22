@@ -1,8 +1,5 @@
 // Create empty object to hold the tasks
 let tasks = {};
-
-let newTasks = [{ task: "", hour: 9 }, { task: "", hour: 10 }, { task: "", hour: 11 }, { task: "", hour: 12 }, { task: "", hour: 13 }, { task: "", hour: 14 }, { task: "", hour: 15 }, { task: "", hour: 16 }, { task: "", hour: 17 }];
-
 // Add ability to click and edit tasks
 
 // Select the paragraph element in the task wrapper 
@@ -69,13 +66,14 @@ const loadTasks = function () {
 
 // Function to change the color of the tasks background based on the approximate due-time
 const taskCheck = function (task) {
+    // startTime and endTime both in 24-hour clock
+    let startTime = 9 // hour that workday starts and first timeslot
+    let endTime = 18 // hour AFTER the last hour of the workday, if the workday ends at 18 (6PM), set endTime to 19 (7PM) 
     let hour = dayjs().hour();
-    console.log(hour);
-    for (let i = 9; i < 18; i++) {
+    for (let i = startTime; i < endTime; i++) {
         $("#time-" + i).find(".task-wrapper").removeClass("bg-light bg-success bg-warning bg-danger");
         if (hour < i ) {
-            $("#time-" + i).find(".task-wrapper").addClass("bg-success");
-            
+            $("#time-" + i).find(".task-wrapper").addClass("bg-success"); 
         }
         else if (hour === i ) {
             $("#time-" + i).find(".task-wrapper").addClass("bg-warning");
@@ -86,6 +84,10 @@ const taskCheck = function (task) {
     }
 }
 
+setInterval(function() {
+    taskCheck();
+    console.log("I've updated!"); 
+}, (1000*60)*5); 
 
 
 // Change bg-color of div containing tasks based on relation to current

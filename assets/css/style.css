@@ -83,8 +83,8 @@ textarea{
 .time-wrap {
   border: 2px solid grey;
   border-left: 0; 
-  border-bottom-right-radius: 0.2rem;
-  border-top-right-radius: 0.2rem;
+  /* border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: 0.2rem; */
 }
 
 /* Style the size for the textarea input for the task-update*/
