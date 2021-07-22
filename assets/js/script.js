@@ -71,15 +71,16 @@ const taskCheck = function (task) {
     let endTime = 18 // hour AFTER the last hour of the workday, if the workday ends at 17 (5PM), set endTime to 18 (6PM) 
     let hour = dayjs().hour();
     for (let i = startTime; i < endTime; i++) {
-        $("#time-" + i).find(".task-wrapper").removeClass("bg-secondary bg-danger bg-success");
+        let timeBox = $("#time-" + i).find(".task-wrapper"); 
+        timeBox.removeClass("bg-secondary bg-danger bg-success");
         if (hour < i ) {
-            $("#time-" + i).find(".task-wrapper").addClass("bg-success"); 
+            timeBox.addClass("bg-success"); 
         }
         else if (hour === i ) {
-            $("#time-" + i).find(".task-wrapper").addClass("bg-danger");
+            timeBox.addClass("bg-danger");
         }
         else {
-            $("#time-" + i).find(".task-wrapper").addClass("bg-secondary");
+            timeBox.addClass("bg-secondary");
         }
     }
 }
