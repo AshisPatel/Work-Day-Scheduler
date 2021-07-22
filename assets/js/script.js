@@ -68,18 +68,18 @@ const loadTasks = function () {
 const taskCheck = function (task) {
     // startTime and endTime both in 24-hour clock
     let startTime = 9 // hour that workday starts and first timeslot
-    let endTime = 18 // hour AFTER the last hour of the workday, if the workday ends at 18 (6PM), set endTime to 19 (7PM) 
+    let endTime = 18 // hour AFTER the last hour of the workday, if the workday ends at 17 (5PM), set endTime to 18 (6PM) 
     let hour = dayjs().hour();
     for (let i = startTime; i < endTime; i++) {
-        $("#time-" + i).find(".task-wrapper").removeClass("bg-light bg-success bg-warning bg-danger");
+        $("#time-" + i).find(".task-wrapper").removeClass("bg-secondary bg-danger bg-success");
         if (hour < i ) {
             $("#time-" + i).find(".task-wrapper").addClass("bg-success"); 
         }
         else if (hour === i ) {
-            $("#time-" + i).find(".task-wrapper").addClass("bg-warning");
+            $("#time-" + i).find(".task-wrapper").addClass("bg-danger");
         }
         else {
-            $("#time-" + i).find(".task-wrapper").addClass("bg-danger");
+            $("#time-" + i).find(".task-wrapper").addClass("bg-secondary");
         }
     }
 }

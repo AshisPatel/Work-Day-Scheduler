@@ -4,14 +4,14 @@ body {
   line-height: 1;
 }
 
-textarea{
+/* textarea{
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-}
+} */
 
 .jumbotron {
   text-align: center;
@@ -75,33 +75,55 @@ textarea{
 .round-right {
   
   border-bottom-right-radius: 1rem;
+  padding-left: 0.2rem;  
   border-top-right-radius: 1rem;
 }
 
 /* Style for custom-border around time */
 
 .time-wrap {
-  border: 2px solid grey;
-  border-left: 0; 
-  /* border-bottom-right-radius: 0.2rem;
-  border-top-right-radius: 0.2rem; */
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey; 
+  
+}
+/* Style for div that is holding task text p and textarea */
+
+.task-wrapper {
+  border-left: 2px solid black;
+  border-right: 2px solid black; 
+}
+
+.task-wrapper:hover {
+  border: 2px solid black; 
+  opacity:0.8; 
+  cursor: pointer; 
 }
 
 /* Style the size for the textarea input for the task-update*/
 .task-text {
-  border: none; 
+  border: none;
   border-radius: 0.2rem; 
-  width: 99.3%; 
+  width: 100%; 
   height: 95%; 
-  left: 0.5%;
-  top: 1%; 
+  left: 0%;
+  top: 1%;
+  padding-left: 0.2rem;  
 }
 
 /* Style the regular task p */
 .task-p {
-  width: 99.3%; 
+  width: 100%; 
   height: 95%; 
-  left: 1.7%;
-  top: 12%; 
+  left: 0.5%; 
+  top: 5%; 
+  padding-left: 0; 
+  margin: 0;  
   position: absolute; 
+}
+
+/* Style for save-task button */
+.save-task:hover {
+  border: 1.5px solid black;
+  opacity: 0.9; 
+  cursor: pointer; 
 }
