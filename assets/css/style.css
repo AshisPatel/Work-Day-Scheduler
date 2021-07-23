@@ -122,8 +122,27 @@ body {
 }
 
 /* Style for save-task button */
+
+.save-task {
+  transition: background-color 2s; 
+}
 .save-task:hover {
   border: 1.5px solid black;
   opacity: 0.9; 
   cursor: pointer; 
 }
+
+textarea {
+  outline:none; 
+  width: 100%;
+  height: 100%;
+  margin: 0; 
+  border: none; 
+}
+
+textarea:focus {
+  outline: none; 
+  border:none; 
+}
+
+
