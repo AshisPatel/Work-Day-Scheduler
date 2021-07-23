@@ -32,6 +32,6 @@ Thank you for taking the time to check out my work day scheduler and README! In 
 
 **Fun Fact**: Humans might be able to hibernate like bears. This belief comes from a news story where a stowaway survived a flight from California to Hawaii while hiddein in the wheel of an airplane (2014). The low oxygen content in the wheel and freezing temperatures are thought to have induced a state of hibernation in the stowaway. Theres also a whole branch of research and studies dedicated to trying to induce human hibernation in order to send people off to far-flung galaxies. I personally, am more interested in sleeping through the Texas Summers, so if you don't hear from me in a few months - it was all in the name of science. 
 
-![Person running away from a fast person wearing a bear mask](hhttps://github.com/AshisPatel/Work-Day-Scheduler-Week-5-Challenge/blob/main/assets/images/running-away.gif)
+![Person running away from a fast person wearing a bear mask](https://github.com/AshisPatel/Work-Day-Scheduler-Week-5-Challenge/blob/main/assets/images/running_away.gif)
 
 *(Me running from my responsibilities)*
