@@ -107,6 +107,6 @@ setInterval(function () {
 loadTasks();
 
 // Set current day on page
-const currentDay = dayjs().format("dddd, MMMM, YYYY");
+const currentDay = dayjs().format("dddd, MMMM DD");
 $("#currentDay").text(currentDay);
 
