@@ -4,7 +4,7 @@
 
 ![Adding some tasks to the work day scheduler and showing functions of save and clear all buttons](https://github.com/AshisPatel/Work-Day-Scheduler-Week-5-Challenge/blob/main/assets/images/wds-preview.gif) 
 
-The Work Day Scheduler is a simple task tracker that lets you add track tasks for a standrad 9AM-5PM workday! The work day scheduler is intended for use on standard monitors, or larger. 
+The Work Day Scheduler is a simple task tracker that lets you add track tasks for a standard 9AM-5PM workday! The work day scheduler is intended for use on standard monitors, or larger. 
 
 ## Function
 
