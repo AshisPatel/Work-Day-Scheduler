@@ -1,4 +1,4 @@
-# Work Day Scheduler - Week 5 Challenge
+# Work Day Scheduler
 
 ## Purpose
 
@@ -24,7 +24,7 @@ Tasks are saved to the localStorage, so the user can refresh and close the webpa
 
 ## Website
 
-https://ashispatel.github.io/Work-Day-Scheduler-Week-5-Challenge/
+https://ashispatel.github.io/Work-Day-Scheduler/
 
 ## End Note - A Thank You to the Reader
 
